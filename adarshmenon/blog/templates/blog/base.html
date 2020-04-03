@@ -1,0 +1,202 @@
+{% load static %}
+{% load markdown_extras %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Bare - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="{% static 'bootstrap/css/bootstrap.min.css' %}"
+        rel="stylesheet" />
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <script src="https://apis.google.com/js/platform.js"></script>
+    <link href="{% static 'fontawesome-free/css/all.min.css' %}"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+        style="position: fixed; top:  0; left:  0; width: 100%;">
+        <div class="container">
+            <a class="navbar-brand" href="#">Adarsh Menon</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarText" aria-controls="navbarText"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <!-- Find the fonts here - https://fontawesome.com/icons?m=free -->
+                <span class="navbar-text">
+                    <a href="https://github.com/adarsh1021/" target="_blank"><i
+                            class="fab fa-fw fa-2x fa-github"></i></a>
+                    <a href="https://medium.com/@adarsh_menon_"
+                        target="_blank"><i
+                            class="fab fa-fw fa-2x fa-medium"></i></a>
+                    <a href="www.linkedin.com/in/adarsh-menon-739573146"
+                        target="_blank"><i
+                            class="fab fa-fw fa-2x fa-linkedin"></i></a>
+                    <a href="https://twitter.com/adarsh_menon_"
+                        target="_blank"><i
+                            class="fab fa-fw fa-2x fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/adarshmenon"
+                        target="_blank"><i
+                            class="fab fa-fw fa-2x fa-youtube"></i></a>
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container" style="margin-top: 100px;">
+        <div class="row bg-light shadow rounded mt-5">
+            <div class="col-12">
+                <div class="row my-5">
+                    <div class="col-2 offset-2">
+                        <img class="img-fluid rounded-circle" alt="100x100"
+                            src="https://lh3.googleusercontent.com/OTHjRfIlIYwZeSP4AZ29RGGMar36T0bjn18AFhGyKmQ3GjkMKzhn9kRWkzCmRsipvJ7SyGKs16HByuNvTB1hz2TDnCCLR8_keE1LeeIDbe1vqC67dN3TIlEL9nxlYZGbDqdED3y-BfZA057EtemEtQIMd48qJnk0avQf0h4LmaNYfUzNkCzWQtMUhU3sxweAqUdfI2tp403CdAyQAm3vjORvY7gprRsEP2blOsUJUXGclxbTNPLPEik8gZ9wtsqJ5f_zrwvN1hpeUPa4ogxf_AE1hQIXkFtEL-o4g7RbkqfAIlkfGQBO1Wl8WkOc3H2t_nv0aegGujQg1QaQkEyCHkFVvWmJi3xHSRTYqmlOUluXjl55Fga8ATHCwsysmzoReeoZHGHwRm-SV4VkwJ97GamO9mPcpc_5rxiKvDx0jRHYUSj6pp4-zdQDN41KWeVbFmHyt03mrrbOWlmAiLrpv7aEMdyHfJ-brnbjzxSxqk0HnU2dcGSVljGzzYOf-A6uqZ85DYIU7ZU6xqqhcF3aGLBbI2lLNMkHbynLArWIUbEglBy58PNihwRZgs7BM8b69YRXR8DzpLghelebK3HWGe05lEZhg_I9AtbTn1gySiB9sIvK__n_ldnu602fXyVOLwtI1whxKtbjP516DuvB7UGvhRZWGWnByEzcODxFeWloJjlNynMQalV7rZCR=w938-h876-no">
+                    </div>
+                    <div class="col my-auto">
+                        <h1>Adarsh Menon</h1>
+                        <p class="text-secondary">Computer Science
+                            Engineering<br>
+                        </p>
+                        <p>Hello ! Welcome to my blog !
+                            <br>I am a Software Developer passionate about
+                            learning and teaching new things.
+                            <br> Check out my YouTube Channel !</p>
+                        <div class="g-ytsubscribe"
+                            data-channelid="UC2qFcoh1JXDwkzuXFWRPtfg"
+                            data-layout="default" data-theme="dark"
+                            data-count="default"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-8 p-1">
+                <h2 class="col-12 mt-2 mb-3">Top Posts</h2>
+                <div class="row mb-3">
+                    <div class="col-5 col-5 mx-2">
+                        <div class="card" style="">
+                            <!-- <img class="card-img-top" src="..."
+                                alt="Card image cap"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Linear Regression in 6
+                                    lines of Python</h5>
+                                <p class="card-text">Linear as well as multiple
+                                    linear regression, in literally 6 lines of
+                                    Python code.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-5 mx-2">
+                        <div class="card" style="">
+                            <!-- <img class="card-img-top" src="..."
+                                alt="Card image cap"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Linear Regression using
+                                    Gradient Descent</h5>
+                                <p class="card-text">Learn how the gradient
+                                    descent algorithm works and implement it
+                                    from scratch in Python.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col-5 col-5 mx-2">
+                        <div class="card" style="">
+                            <!-- <img class="card-img-top" src="..."
+                                alt="Card image cap"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Face Detection in 2
+                                    Minutes using OpenCV & Python</h5>
+                                <p class="card-text">A very popular and easy way
+                                    of
+                                    detecting faces using Haar cascades in
+                                    OpenCV and Python.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-5 col-5 mx-2">
+                        <div class="card" style="">
+                            <!-- <img class="card-img-top" src="..."
+                                alt="Card image cap"> -->
+                            <div class="card-body">
+                                <h5 class="card-title">Linear Regression Using
+                                    Least Squares</h5>
+                                <p class="card-text">Implementing linear
+                                    regression using the least squares method.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 p-1 bg-light">
+                <h2 class="col-12 mt-2 mb-3">Recent Posts</h2>
+                <ul style="list-style-type: none; padding-inline-start: 20px;">
+                    <li>
+                        <div class="mb-3">
+                            <h5>COVID19: Visualising the Impact of Social
+                                Distancing
+                                in
+                                Python</h5>
+                            <span>March 26, 2020</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mb-3">
+                            <h5>Logistic Regression in Machine Learning using
+                                Python</h5>
+                            <span>December 27, 2019</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mb-3">
+                            <h5>Face Detection in 2 Minutes using OpenCV &
+                                Python</h5>
+                            <span>April 22, 2019</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="mb-3">
+                            <h5>Linear Regression in 6 lines of Python</h5>
+                            <span>September 25, 2018</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
